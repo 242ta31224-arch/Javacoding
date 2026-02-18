@@ -1,0 +1,37 @@
+# Javacoding
+Codee
+import java.util.Scanner;
+public class Happy
+{
+    public static void main(String args[])
+
+    {
+        Scanner sc=new Scanner(System.in);
+        int num=sc.nextInt();
+        
+        int sq,rev;
+        while(num!=1  && num!=4)
+        {
+        int sum=0;
+        
+        while(num>0)
+        {
+            int rem=num%10;
+            sq=rem*rem;
+            sum=sum+sq;
+            num=num/10;
+        }
+            num=sum;
+        }
+        
+        if(num==1)
+        {
+            System.out.println("Happy");
+        }
+          else 
+        {
+            System.out.println("Sad😢");
+        }
+        
+    }
+}
